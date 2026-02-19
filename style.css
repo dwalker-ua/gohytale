@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Segoe UI', sans-serif;
+    cursor: default;
+}
+
+@font-face {
+  font-family: 'Penumbra';
+  src: url('Penumbra Serif Std Semibold.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+    background-color: #262626;
+    color: #d6d6d6;
+}
+
+#banner {
+    height: 280px;
+    background: url(main.webp) 100% / cover no-repeat;
+    border-radius: 14px;
+    position: relative;
+}
+
+.divCenter {
+    display: block;
+    width: 80%;
+    max-width: 900px;
+    margin: 16px auto;
+}
+
+#banner_title {
+    display: block;
+    bottom: 0px;
+    position: absolute;
+    width: 100%;
+    background-color: #321c17c2;
+    border-radius: 14px;
+}
+
+.bannerElement {
+    display: inline-block;
+    margin: 14px 0 4px 10px;
+    vertical-align: middle;
+}
+
+#banner_name {
+    color: #dbdbdb;
+    font-size: 34px;
+    font-weight: 800;
+    padding-bottom: 9px;
+    text-shadow: 2px 2px 6px #c17400;
+    font-family: Penumbra;
+    padding-left: 20px;
+}
+
+#server_status {
+    color: #23d295;
+    background: #23d29533;
+    padding: 4px 8px;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 15px;
+    font-family: monospace;
+    margin-bottom: 15px;
+}
+
+.tag {
+    display: inline-block;
+    color: #e8ac02;
+    background-color: #e8ac0233;
+    font-size: 13px;
+    padding: 4px 9px;
+    vertical-align: middle;
+    border-radius: 6px;
+    font-weight: 500;
+    margin: 4px 1px;
+}
+
+#tags {
+    text-align: center;
+}
+
+.tag+.tag {
+    color: #e96276;
+    background-color: #e9627633;
+}
+
+.tag+.tag+.tag {
+    color: #96d11b;
+    background-color: #96d11b33;
+}
+
+.tag+.tag+.tag+.tag {
+    color: #3fcb70;
+    background-color: #3fcb7033;
+}
+
+.tag+.tag+.tag+.tag+.tag {
+    color: #987bea;
+    background-color: #987bea33;
+}
+
+#link_block {
+    text-align: center;
+    margin: 40px auto;
+}
+
+.divCenter p {
+    font-size: 18px;
+}
+
+.greenHighlight {
+    color: #42c365;
+    background-color: #42c36511;
+    padding: 2px 4px;
+    border-radius: 4px;
+    font-family: monospace;
+}
+
+#address_field {
+    color: #fff;
+    padding: 8px 30px;
+    margin: 15px 0;
+    font-family: monospace;
+    width: 320px;
+    font-size: 21px;
+    text-align: center;
+    border-radius: 8px;
+    border: 2px solid #6c6c6c;
+    background: #262626 url(copy_default.png) 340px / 28px no-repeat;
+    transition: background-color 1s ease-in;
+    outline: none;
+}
+
+#address_field:hover {
+    border-color: #9e9e9e;
+    background: #262626 url(copy_hover.png) 340px / 28px no-repeat;
+}
+
+#address_field:focus {
+    background-color: #3a3a3a;
+}
+
+.description {
+    margin: 34px 10px;
+    line-height: 120%;
+}
+
+.greyHighlight {
+    color: #c9c9c9;
+    background-color: #c9c9c911;
+    padding: 2px 4px;
+    border-radius: 4px;
+    font-family: monospace;
+}
