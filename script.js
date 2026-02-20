@@ -14,6 +14,11 @@ function copyAddress() {
     setTimeout(() => { address_field.value = serverIP; }, 3000);
 }
 
+function thanks(element) {
+    element.innerHTML = "Thank you ❤";
+    element.classList.add("voted");
+}
+
 async function updateServerMetric() {
     const workerUrl = "https://gohytale-server-status.arthur2rock-live.workers.dev";
 

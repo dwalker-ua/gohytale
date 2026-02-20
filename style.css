@@ -167,3 +167,47 @@ body {
     border-radius: 4px;
     font-family: monospace;
 }
+
+#support_block {
+    text-align: center;
+    margin: 44px auto;
+    border-top: 1px solid #474747;
+    border-bottom: 1px solid #474747;
+    padding: 20px 0;
+}
+
+.header {
+    font-size: 18px;
+    padding: 0 0 10px 0;
+}
+
+.supportTable {
+    width: 80%;
+    text-align: left;
+    margin: 0 auto;
+    font-size: 18px;
+}
+
+.supportTable td {
+    padding: 8px 10px;
+}
+
+.voteButton {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    background-color: #ee883e;
+    padding: 6px 30px;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.supportTable td:nth-child(even) {
+    text-align: center;
+}
+
+.voteButton.voted {
+    color: #42dd79;
+    background-color: #42dd7911;
+}
