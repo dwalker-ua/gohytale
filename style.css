@@ -74,8 +74,8 @@ body {
 }
 
 #server_status.offline {
-    color: #e84c49;
-    background: #e84c4933;
+    color: #e84c49!important;
+    background: #e84c4933!important;
 }
 
 .tag {
