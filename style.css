@@ -211,3 +211,9 @@ body {
     color: #42dd79;
     background-color: #42dd7911;
 }
+
+#server_ip_copied_count {
+    font-style: italic;
+    font-size: 15px;
+    color: #a3a3a3;
+}

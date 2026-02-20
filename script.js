@@ -1,11 +1,13 @@
 let serverIP = "play.gohytale.net:15662";
 let server_state = false;
 let server_players = 0;
+let server_ip_copied = "";
 
 let address_field = document.getElementById("address_field");
 address_field.value = serverIP;
 
 let server_status = document.getElementById("server_status");
+let server_ip_copied_count = document.getElementById("server_ip_copied_count");
 
 function copyAddress() {
     navigator.clipboard.writeText(serverIP);
@@ -30,6 +32,7 @@ async function updateServerMetric() {
 
         server_state = data.online;
         server_players = data.players;
+        server_ip_copied = data.copied;
 
         if (server_state) {
             if (server_players > 0)
@@ -40,6 +43,8 @@ async function updateServerMetric() {
             server_status.innerHTML = "offline";
             server_status.classList.add("offline");
         }
+
+        server_ip_copied_count.innerHTML = "(IP Copies: " + server_ip_copied + ")";
     }
     catch {}
 }
