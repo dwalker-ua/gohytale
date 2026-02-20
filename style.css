@@ -73,7 +73,7 @@ body {
     margin-bottom: 15px;
 }
 
-#server_status.offline {
+#server_status.bannerElement.offline {
     color: #e84c49!important;
     background: #e84c4933!important;
 }
