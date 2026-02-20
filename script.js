@@ -27,6 +27,8 @@ async function updateServerMetric() {
         if (server_state) {
             if (server_players > 0)
                 server_status.innerHTML = `${server_players} online`;
+            else
+                server_status.innerHTML = "online";
         } else {
             server_status.innerHTML = "offline";
             server_status.classList.add("offline");
