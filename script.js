@@ -11,6 +11,8 @@ function copyAddress() {
     navigator.clipboard.writeText(serverIP);
     address_field.value = "copied!";
 
+    fetch("https://ip-copy.arthur2rock-live.workers.dev/");
+
     setTimeout(() => { address_field.value = serverIP; }, 3000);
 }
 
